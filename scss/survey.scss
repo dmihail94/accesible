@@ -70,6 +70,7 @@ form {
    width: 268px;
    color:palette(grey,xx-light);
    font-size: em(18px);
+   background: palette(black,light);
 }
 
 .rounded {
@@ -83,5 +84,3 @@ form {
    -moz-border-radius: 5px;
    border-radius: 5px;
 }
-
-.blue    { background-color: #3b8ec2; }
