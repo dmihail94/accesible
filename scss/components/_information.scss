@@ -1,0 +1,34 @@
+.information{
+  width: 100%;
+  text-align: center;
+  margin-top: em(17px);
+
+  @include mq(medium) {
+    margin-top: em(16px);
+    text-align: left;
+  }
+
+  p {
+    color:$white;
+    line-height: em(22px);
+    font-size: em(15px);
+    font-weight: $font-weight--bold;
+    margin:em(10px) 0;
+
+    @include mq(medium) {
+      line-height: em(24px);
+    }
+  }
+
+  .buy {
+    font-size: em(17px);
+    font-weight: $font-weight--medium;
+    color: rgb(49, 135, 235);
+    transition: .5s;
+
+    &:hover {
+      color: $aria-detail;
+      border-bottom: 2px solid rgb(49, 135, 235);
+    }
+  }
+}

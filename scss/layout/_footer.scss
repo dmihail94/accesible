@@ -1,0 +1,45 @@
+/* Footer styles */
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  font-size: em(22px);
+  @include mq(medium) {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  .copyright {
+    top: -8px;
+    font-size: 0.75em;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 48px;
+  height: 44px;
+  opacity: 0.5;
+  transition: all 0.5s;
+
+  img {
+    width: 48px;
+    height: 44px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

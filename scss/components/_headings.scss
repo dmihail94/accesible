@@ -1,0 +1,8 @@
+.main-heading {
+  @extend %hdl-primary;
+  font-weight: $font-weight--bold;
+}
+
+.sec-heading {
+  @extend %hdl-sec;
+}

@@ -1,0 +1,38 @@
+%hdl-primary {
+  font-size: em(48px,16px);
+  text-align: center;
+}
+
+%hdl-sec {
+  font-size: em(32px,16px);
+}
+
+%button {
+  width:60%;
+  margin: 5px 0;
+  border:none;
+  font-size: em(20px);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+%input {
+  width: 90%;
+  margin: 10px auto;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  transition: 0.5s ease-out;
+  padding: 5px;
+  font-size: em(17px);
+  font-weight: $font-weight--light;
+  display: block;
+
+  @include mq(medium) {
+    display: inline-block;
+  }
+}
+
+%select {
+  
+}

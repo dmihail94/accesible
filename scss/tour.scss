@@ -1,0 +1,37 @@
+@import 'config/index';
+
+/* Tour page styles */
+
+
+.main-heading{
+  @extend %hdl-sec;
+  @include mq(medium) {
+    margin-top: 40px;
+  }
+}
+
+.pick{
+  width: 40px;
+  height: 0%;
+  padding: 10px;
+}
+
+#concerts {
+  width: 80%;
+  margin: 0 auto;
+
+  caption {
+    margin-bottom: 15px;
+    font-size: em(20px);
+    font-weight: $font-weight--medium;
+  }
+}
+
+#concerts tr {
+  font-family: $font-family--secondary;
+  border-color: $white;
+}
+
+#concerts td {
+  padding: 5px;
+}

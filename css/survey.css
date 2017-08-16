@@ -1,28 +1,93 @@
-/* Survey page styles */
-
-.photo{
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+.newsletter button {
   width: 60%;
-  padding: 10px;
-}
+  margin: 5px 0;
+  border: none;
+  font-size: 1.25em;
+  padding: 5px;
+  border-radius: 5px; }
+
+.newsletter input {
+  width: 90%;
+  margin: 10px auto;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  transition: 0.5s ease-out;
+  padding: 5px;
+  font-size: 1.0625em;
+  font-weight: 400;
+  display: block; }
+  @media (min-width: 840px) {
+    .newsletter input {
+      display: inline-block; } }
+
+/* Survey page styles */
+.photo {
+  width: 60%;
+  padding: 10px; }
+  @media (min-width: 840px) {
+    .photo {
+      width: 40%; } }
+
+label {
+  font-size: 1.125em;
+  display: block;
+  margin: 10px 0; }
 
 form {
   margin: 0 auto;
   text-align: left;
-  display: inline-block;
-}
+  display: block; }
 
-.container{
-  text-align: center;
-}
-.newsletter{
-  text-align: right;
+.survey label {
+  display: inline-block; }
 
-}
+.container {
+  text-align: center; }
 
+.newsletter {
+  text-align: center; }
+  .newsletter input {
+    background: #a1a4a8; }
+    .newsletter input:focus {
+      background: #fff; }
+  .newsletter .aria {
+    color: #00ff7f;
+    font-weight: 700;
+    font-size: 0.875em; }
+  .newsletter button {
+    background: #6bb9f0;
+    color: #0b0b0b; }
 
-/* Styles for larger screens */
-@media screen and (min-width: 840px) {
-  .photo{
-    width: 40%;
-  }
-}
+.styled-select {
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 240px; }
+
+.styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 0;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+  color: #ebecec;
+  font-size: 1.125em; }
+
+.rounded {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+
+.semi-square {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.blue {
+  background-color: #3b8ec2; }
+
+/*# sourceMappingURL=survey.css.map */

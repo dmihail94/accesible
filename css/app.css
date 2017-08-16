@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+.main-heading {
+  font-size: 3em;
+  text-align: center; }
+
+.sec-heading {
+  font-size: 2em; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Global Layout Set-up */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background: #2d2b30; }
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #d2d2d2; }
+
+table, td {
+  border: 1px solid; }
+
+header {
+  text-align: center;
+  background: linear-gradient(rgba(50, 51, 51, 0.69), rgba(121, 122, 122, 0.2)), url("../img/concert02_no_text.jpg") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 70px;
+  height: 350px; }
+  @media (min-width: 840px) {
+    header {
+      min-height: 470px; } }
+  header .sec-heading {
+    margin-top: 3.125em;
+    color: #8b0000;
+    font-weight: 700; }
+    @media (min-width: 840px) {
+      header .sec-heading {
+        font-size: 2.5em;
+        margin-top: 5em; } }
+
+/* Navigation Styles */
+nav {
+  width: 100%;
+  background: #0b0b0b;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center; }
+
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto; }
+  @media (min-width: 840px) {
+    .nav {
+      max-width: 1200px;
+      padding: 0 30px; } }
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+    letter-spacing: 5px; }
+  .nav li {
+    padding: 5px 10px 10px 10px; }
+  .nav a {
+    transition: all .7s ease-out; }
+    .nav a:hover {
+      color: #fff;
+      border-bottom: 2px solid #0c82bb; }
+
+@media (min-width: 840px) {
+  main {
+    padding-top: 1.25em; } }
+
+/* Footer styles */
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  font-size: 1.375em; }
+  @media (min-width: 840px) {
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto; } }
+  footer .copyright {
+    top: -8px;
+    font-size: 0.75em; }
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    footer ul li {
+      display: inline-block; }
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 48px;
+  height: 44px;
+  opacity: 0.5;
+  transition: all 0.5s; }
+  a.social img {
+    width: 48px;
+    height: 44px; }
+  a.social:hover {
+    opacity: 1; }
+
+.main-heading {
+  font-weight: 700; }
+
+.photo {
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto; }
+  @media (min-width: 840px) {
+    .photo {
+      width: 30%;
+      margin: 20px 30px; } }
+
+.card {
+  margin: 30px auto;
+  padding: 20px 40px 40px;
+  text-align: center;
+  border-top: 4px solid #781125; }
+  .card:hover {
+    border-color: #96731A; }
+  @media (min-width: 840px) {
+    .card {
+      margin: 40px auto;
+      padding: 20px 40px 40px;
+      width: 80%;
+      max-width: 1000px;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.information {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.0625em; }
+  @media (min-width: 840px) {
+    .information {
+      margin-top: 1em;
+      text-align: left; } }
+  .information p {
+    color: #fff;
+    line-height: 1.375em;
+    font-size: 0.9375em;
+    font-weight: 700;
+    margin: 0.625em 0; }
+    @media (min-width: 840px) {
+      .information p {
+        line-height: 1.5em; } }
+  .information .buy {
+    font-size: 1.0625em;
+    font-weight: 400;
+    color: #3187eb;
+    transition: .5s; }
+    .information .buy:hover {
+      color: #00ff7f;
+      border-bottom: 2px solid #3187eb; }
+
+/*# sourceMappingURL=app.css.map */

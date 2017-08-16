@@ -1,0 +1,87 @@
+@import 'config/index';
+/* Survey page styles */
+.photo {
+  width: 60%;
+  padding: 10px;
+
+  @include mq(medium) {
+    width: 40%;
+  }
+}
+
+label {
+  font-size: em(18px);
+  display: block;
+  margin: 10px 0;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: block;
+}
+
+.survey label {
+  display: inline-block;
+}
+
+.container {
+  text-align: center;
+}
+
+.newsletter {
+  text-align: center;
+
+  input {
+    @extend %input;
+    background: palette(grey,light);
+
+    &:focus {
+      background: $white;
+    }
+  }
+
+  .aria {
+    color: $aria-detail;
+    font-weight: $font-weight--bold;
+    font-size: em(14px);
+  }
+
+  button {
+    @extend %button;
+    background: $submit-button;
+    color: palette(black);
+  }
+}
+
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 0; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+   color:palette(grey,xx-light);
+   font-size: em(18px);
+}
+
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+.blue    { background-color: #3b8ec2; }

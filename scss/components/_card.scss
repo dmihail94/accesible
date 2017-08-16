@@ -1,0 +1,18 @@
+.card {
+  margin: 30px auto;
+  padding: 20px 40px 40px;
+  text-align: center;
+  border-top: 4px solid #781125;
+
+  &:hover {
+    border-color: #96731A;
+  }
+
+  @include mq(medium) {
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+    @include flexy();
+  }
+}
