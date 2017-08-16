@@ -1,0 +1,95 @@
+Accessible web sites allow anyone and everyone to use the web, regardless of physical or hardware differences. They also, generally, make sites faster to download and easier to parse for software like search engines. More accessible web sites are also starting to be given higher PageRank scores for web searches.
+
+For this project you will modify the website files provided for the rock band “Accessible Frog" to improve the site's accessibility for users.
+
+
+Courses:Web Accessibility Compliance
+
+
+Install the Accessibility Developer Tools Chrome Extension.
+
+    You need to use the Chrome web browser.
+    To use the extension, load the page you wish to check; open the developer tools (right click on the webpage and select Inspect); select the Audits tab; select the Accessibility audit; click Run.
+
+
+Install Fangs Firefox Extension for screen reader emulation.
+
+    You will need to have Firefox installed to use this. Have the page you want to review loaded and right click.
+    In the right click menu select “View Fangs”. This will launch a new window that shows you how a screen reader will interpret the page.
+
+
+Language
+
+    Specify a language with the lang attribute on the <html> element on each .html page.
+
+
+Design
+
+    Ensure that the foreground text and background color of your site have sufficient contrast. This will make your site more readable for everyone. Contrast Ratio is one tool for checking the contrast of your colors for both standard vision and color deficient user.
+
+
+Document Structure
+
+    Ensure heading elements i.e. <h1> are used to provide hierarchical structure to page content.
+    Specifically look for the <p> tags with the class "heading" these should be changed to help assist screen readers.
+
+Images
+
+    Text in banner area is part of the image and will not be picked up by screen readers. Use the background image without text (concert02_no_text.jpg) and add text to the HTML to roughly match the layout.
+    Add alt tags to images.
+    Make sure that the decorative images in tour.html have an empty alt attribute i.e alt=""
+
+
+Links
+
+    Ensure links are visually distinct.
+    Add hover state to links.
+    Ensure the image link icons in the footer have accompanying text describing the link. However we don’t want to see this text on the page. Think about using alt text for the image or using css styling to hide text describing the image link.
+
+
+Table
+
+    Create a table for the tour dates information using the <td> element for table data cells and the <th> element for table header cells.
+    Ensure your table has a scope and caption element.
+
+
+Form
+
+    Ensure form elements have styled focus states using the :focus pseudo class.
+    Add associated labels for form controls.
+    Make sure all labels have a ‘for’ value. Matching for and id values associate the label with the appropriate form control.
+    Group form elements with a fieldset.
+    Add a legend to describe the grouping.
+    Ensure the select field options are in alphabetical order.
+    Make sure you can select options in the drop-down menu by typing from the keyboard.
+
+
+Checking your code:
+
+    Check your code using the Chrome Accessibility extension and the Fangs extension for Firefox.
+    You can also copy and paste your HTML into the Accessibility Validator (see the Project Resources section for link).
+    You will also need to check your code against the Accessibility Checklist (see the Project Resources section for link).
+
+
+Extra Credit
+
+
+
+Add in aria landmark roles attributes to sections of the page.
+
+    You will need to add in 3 per page, using the most appropriate role value for the content of the container.
+    For example, the footer section would look like:<footer role="contentinfo">
+    We have not covered Aria Landmark roles. However this is a great chance to flex your Google searching skills.
+    We have included links in the Project Resources to get you started.
+
+
+Use aria-describedby to add a description of what the submit form button does when clicked and to provide more information about parts of the form. For example:
+
+    <label for="password">Choose a password</label>
+    <input type="password" id="password" aria-describedby="hint" ...>
+
+    <p id="hint">Your password must be at least 10 characters in length. It must contain a mixture of upper and lower case letters, numbers and punctuation marks.</p>
+
+
+
+

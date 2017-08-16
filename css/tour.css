@@ -1,0 +1,22 @@
+/* Tour page styles */
+
+
+.heading{
+  display: inline-block;
+  margin: 0;
+}
+
+.pick{
+  width: 40px;
+  height: 0%;
+  padding: 10px;
+}
+
+#concerts tr {
+  font-family: 'Open Sans', sans-serif;
+  border-color: rgba(255,255,255,0.8);
+}
+
+#concerts td {
+  padding: 3px;
+}
