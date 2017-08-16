@@ -41,17 +41,17 @@ form {
     }
   }
 
-  .aria {
-    color: $aria-detail;
-    font-weight: $font-weight--bold;
-    font-size: em(14px);
-  }
-
   button {
     @extend %button;
     background: $submit-button;
     color: palette(black);
   }
+}
+
+.aria {
+  color: $aria-detail;
+  font-weight: $font-weight--bold;
+  font-size: em(14px);
 }
 
 .styled-select {

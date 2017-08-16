@@ -52,13 +52,14 @@ form {
     background: #a1a4a8; }
     .newsletter input:focus {
       background: #fff; }
-  .newsletter .aria {
-    color: #00ff7f;
-    font-weight: 700;
-    font-size: 0.875em; }
   .newsletter button {
     background: #6bb9f0;
     color: #0b0b0b; }
+
+.aria {
+  color: #00ff7f;
+  font-weight: 700;
+  font-size: 0.875em; }
 
 .styled-select {
   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
